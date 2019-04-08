@@ -7,6 +7,7 @@ $(document).ready(function(){
             this.totalScore= 0;
             this.diceScore= 0;
         };
+
  var playerOne = new Player(); 
  var playerTwo = new Player();       
 
@@ -21,7 +22,9 @@ Player.prototype.roll = function(){
    }
    return rolls
 };
+
 // displaying total score
+
 $("button#roller-one").click(function(){
     document.getElementById("rollDice").innerHTML= playerOne.roll();
 });
@@ -37,16 +40,19 @@ Player.prototype.hold= function(){
 };
 
 //calculating total score
-$("#hold-one").click(function(){
+$("#hold-one").click(function() {
 
     document.getElementById("total1").innerHTML= playerOne.hold();
+
+});
+
+$("#hold-two").click(function(){
+
     document.getElementById("total2").innerHTML = playerTwo.hold();
 });
-// win game
-var winScore = 100
-if (Player){
-    this.totalScore===100;
-    
+
+if (Player.totalScore==100){
+    alert
 }
     });
 });

@@ -16,14 +16,6 @@ This is an online game where two players compete to reach a hundred points, wher
 
 
 
-|   Behaviour                :|  User Input          :| Output           |
-|----------------------------:|----------------------:|------------------|
-| A user has to select answer:| Wrong answer         :| No points given  |
-|and the web will calculate  :| Right answer         :|  + 1 point       |
-|the total and give you resu-:|                      :| (total/7) *100   |
-|lts. overall total          :|                      :|  Percentage      |
-
-
 ## Known Bugs
 No known bugs
 
