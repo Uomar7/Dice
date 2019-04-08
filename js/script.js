@@ -52,6 +52,10 @@ $("#hold-two").click(function(){
     document.getElementById("total2").innerHTML = playerTwo.hold();
     
 });
+  playerOne.name = $("input#firstPlayer").val();
+  playerTwo.name = $("input#secondPlayer").val();
 
+  document.getElementById("play1").innerHTML = playerOne.name;
+  document.getElementById("play2").innerHTML = playerTwo.name;
     });
 });
