@@ -7,7 +7,8 @@ $(document).ready(function(){
             this.totalScore= 0;
             this.diceScore= 0;
         };
- var playerOne = new Player();        
+ var playerOne = new Player(); 
+ var playerTwo = new Player();       
 
 //roll method
 Player.prototype.roll = function(){
@@ -22,7 +23,16 @@ Player.prototype.roll = function(){
 };
 // displaying total score
 $("button#roller-one").click(function(){
-    document.getElementById("total1").innerHTML= playerOne.roll()
-})
+    document.getElementById("total1").innerHTML= playerOne.roll();
+});
+
+$("button#roller-two").click(function(){
+    document.getElementById("total2").innerHTML= playerTwo.roll();
+});
+Player.prototype.Hold= function(){
+    
+    this.totalScore+=cumulatingScore;
+}
+
     });
 });
