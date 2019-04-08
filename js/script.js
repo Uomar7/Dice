@@ -49,7 +49,7 @@ $("#hold-one").click(function(){
 
 $("#hold-two").click(function(){
 
-    document.getElementById("total2").innerHTML = playerTwo.hold();
+    document.getElementById("total2").innerHTML= playerTwo.hold();
     
 });
   playerOne.name = $("input#firstPlayer").val();
