@@ -29,10 +29,18 @@ $("button#roller-one").click(function(){
 $("button#roller-two").click(function(){
     document.getElementById("rollDice2").innerHTML= playerTwo.roll();
 });
-Player.prototype.Hold= function(){
+Player.prototype.hold= function(){
 
-    this.totalScore+=cumulatingScore;
-}
+    this.totalScore+=this.cumulatingScore;
+    this.cumulatingScore=0;
+    return this.totalScore;
+};
 
+//calculating total score
+$("#hold-one").click(function(){
+
+    document.getElementById("total1").innerHTML= playerOne.hold();
+    document.getElementById("total2").innerHTML = playerTwo.hold();
+});
     });
 });
