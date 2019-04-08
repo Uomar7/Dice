@@ -40,19 +40,18 @@ Player.prototype.hold= function(){
 };
 
 //calculating total score
-$("#hold-one").click(function() {
+$("#hold-one").click(function(){
 
     document.getElementById("total1").innerHTML= playerOne.hold();
+    
 
 });
 
 $("#hold-two").click(function(){
 
     document.getElementById("total2").innerHTML = playerTwo.hold();
+    
 });
 
-if (Player.totalScore==100){
-    alert
-}
     });
 });
