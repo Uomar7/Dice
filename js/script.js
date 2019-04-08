@@ -23,14 +23,14 @@ Player.prototype.roll = function(){
 };
 // displaying total score
 $("button#roller-one").click(function(){
-    document.getElementById("total1").innerHTML= playerOne.roll();
+    document.getElementById("rollDice").innerHTML= playerOne.roll();
 });
 
 $("button#roller-two").click(function(){
-    document.getElementById("total2").innerHTML= playerTwo.roll();
+    document.getElementById("rollDice2").innerHTML= playerTwo.roll();
 });
 Player.prototype.Hold= function(){
-    
+
     this.totalScore+=cumulatingScore;
 }
 
