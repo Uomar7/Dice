@@ -42,5 +42,11 @@ $("#hold-one").click(function(){
     document.getElementById("total1").innerHTML= playerOne.hold();
     document.getElementById("total2").innerHTML = playerTwo.hold();
 });
+// win game
+var winScore = 100
+if (Player){
+    this.totalScore===100;
+    
+}
     });
 });
