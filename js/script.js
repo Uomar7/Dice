@@ -17,8 +17,10 @@ Player.prototype.roll = function(){
 
    if(rolls>1){
        this.cumulatingScore+=rolls;
+
    } else {
        this.cumulatingScore = 0;
+       
    }
    return rolls
 };
@@ -29,25 +31,25 @@ $("button#roller-one").click(function(){
     document.getElementById("rollDice").innerHTML= playerOne.roll();
 });
 
-$("button#roller-two").click(function(){
+        $("button#roller-two").click(funct)ion(){
     document.getElementById("rollDice2").innerHTML= playerTwo.roll();
 });
-Player.prototype.hold= function(){
 
-    this.totalScore+=this.cumulatingScore;
-    this.cumulatingScore=0;
+Player.prototype.hold = function(){
+
+    this.totalScore += this.cumulatingScore;
+    this.cumulatingScore = 0;
     return this.totalScore;
 };
 
 //calculating total score
-$("#hold-one").click(function(){
+$("#hold-one").click(function() {
 
     document.getElementById("total1").innerHTML= playerOne.hold();
     
-
 });
 
-$("#hold-two").click(function(){
+$("#hold-two").click(function() {
 
     document.getElementById("total2").innerHTML= playerTwo.hold();
     
@@ -57,5 +59,6 @@ $("#hold-two").click(function(){
 
   document.getElementById("play1").innerHTML = playerOne.name;
   document.getElementById("play2").innerHTML = playerTwo.name;
+   
     });
 });
