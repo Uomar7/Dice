@@ -13,7 +13,7 @@ $(document).ready(function(){
 
 //roll method
 Player.prototype.roll = function(){
-   var rolls = Math.floor(Math.random() * 6 + 1);
+   var rolls = Math.floor(6 *Math.random() + 1);
 
    if(rolls>1){
        this.cumulatingScore+=rolls;
@@ -31,7 +31,7 @@ $("button#roller-one").click(function(){
     document.getElementById("rollDice").innerHTML= playerOne.roll();
 });
 
-        $("button#roller-two").click(funct)ion(){
+        $("button#roller-two").click(function(){
     document.getElementById("rollDice2").innerHTML= playerTwo.roll();
 });
 
