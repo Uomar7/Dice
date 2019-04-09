@@ -18,11 +18,15 @@ This is an online game where two players compete to reach a hundred points, wher
 ## Behaviour Driven Develoopment
 
 *As a user, I want to roll the dice when its my turn to play in the game.
+
 *As a user I want to see the score I get for each roll of the dice in the game.
 As a user I want to see my cumulative total for each round I play in the game.
+
 *As a user I want the option to hold my score when am satisfied with the score I've gained in a round, hence hold my score.
+
 *As a user, I want to be alerted when my dice rolls on number one. This will help me know 
 that I can't roll the dice until the alternate player takes their round.
+
 *As a user, I need a way to know which player has won the game, which means they have scored set points before the other player.
 
 
