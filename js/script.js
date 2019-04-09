@@ -5,7 +5,7 @@ $(document).ready(function(){
         function Player() {
             this.name="";
             this.totalScore= 0;
-            this.diceScore= 0;
+            this.cumulatingScore= 0;
         };
 
  var playerOne = new Player(); 
@@ -13,7 +13,7 @@ $(document).ready(function(){
 
 //roll method
 Player.prototype.roll = function(){
-   var rolls = Math.floor(6 *Math.random() + 1);
+   var rolls = Math.floor((Math.random()*6) + 1);
 
    if(rolls>1){
        this.cumulatingScore+=rolls;
@@ -40,6 +40,7 @@ Player.prototype.hold = function(){
     this.totalScore += this.cumulatingScore;
     this.cumulatingScore = 0;
     return this.totalScore;
+
 };
 
 //calculating total score
@@ -60,5 +61,7 @@ $("#hold-two").click(function() {
   document.getElementById("play1").innerHTML = playerOne.name;
   document.getElementById("play2").innerHTML = playerTwo.name;
    
+  
+      
     });
 });
